@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* overflow-x: hidden; */
+    background-color: black;
+    height: 300vh;
+}
+
+/* nav config */
+
+header nav {
+    display: flex;
+    background: black;
+    color: red;
+    justify-content: space-around;
+    padding: 0 50px; 
+    height: 70px;
+    align-items: flex-start;
+}
+
+    header nav .logo {
+    font-size: 3rem;
+}
+
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    width: 75%;
+    justify-content: space-evenly;
+    /* justify-content: start; */
+}
+
+header nav ul li {
+    padding-top: 25px;
+}
+
+header nav ul li a {
+    color: rgb(255, 255, 255);
+    /* display: inline; */
+    text-decoration: none;
+    font-size: 1rem;
+    padding-right: 40px;
+}
+
+header nav ul .menu-nav {
+    padding-left: 500px;
+    justify-items: center;
+}
+
+header nav ul li a:hover {
+    color: red;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.menu-toggle {
+    display: none;
+    margin-top: 25px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 18px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+}
+
+section.hero {
+    display: flex;
+    height: 100vh;
+    padding-top: 120px;
+    width: 100%;
+    background: gray url('../static/img/squid.jpg') center / cover no-repeat;
+    color: rgba(0, 0, 0, 1);
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+}
+
+section.hero .hero-content {
+    /* display: flex; */
+    padding-left: 50px;
+    padding-right: 50px;
+    /* margin-left: 10%; */
+    /* margin: 0; */
+    margin-top: 600px;
+    margin-bottom: 400px;
+}
+
+section.hero .hero-content h1 {
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 2.25em;
+}
+
+section.hero .hero-content h3 {
+    color: white;
+    /* opacity: 60%; */
+    margin: 20px 0px 20px;
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+
+.movie-list {
+    display: flex;
+    align-items: center;
+}
+
+.movie-list-item .movie-list-item-img {
+    /* padding-bottom: 10px; */
+    /* padding-top: 200px; */
+    margin-top: 20px;
+}
+
+.movie-list-item:hover .movie-list-item-img {
+    transform: scale(1.2);
+    transition: 2s;
+}
+
+section.hero .movie-list-container {
+    padding-top: 10px;
+}
+
+section.hero .movie-list-wrapper .movie-list .movie-list-item img{
+    width: 250px;
+    height: 150px;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+section.hero .movie-list-container h2 {
+    color: white;
+    padding-top: 400px;
+    padding-left: 10px;
+}
+
+section.hero .upcoming .movie-list-wrapper .movie-list .movie-list-item img {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.btn-play {
+    background:rgba(255, 255, 255, 0.804);
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: 2s;
+}
+
+.hero-content .btn-play:hover {
+    color: gray;
+}
+
+.hero-content .btn-watch {
+    background: rgba(255, 255, 255, 0.804);
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: 2s;
+    /* padding-left: 60px; */
+}
+
+.hero-content .btn-watch:hover {
+    color: gray;
+    transform: scale(1.2);
+}
+
+.now-trending {
+    margin-top: -200px;
+}
+
+.upcoming {
+    margin-top: -300px;
+}
+/* MOBILE */
+
+@media screen and (max-width: 576px) {
+
+    header nav ul.menu-nav {
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute; 
+        background-color: rgba(0, 0, 0, 0.8);
+        height: 100vh;
+        top: 0;
+        right: 0;
+        margin-top: 50px;
+        padding-left: 10px;
+        transform: translateX(100%);
+        /* transition: all 0.5s linear;  */
+    }
+
+    header nav ul.menu-nav.clicked {
+        transform: translateX(0);
+    }
+
+    header nav ul.menu-nav li a {
+        font-size: 2rem;
+    }
+    
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        height: 15px;
+        justify-content: space-between;
+    }
+
+    .movie-list {
+        display: inline;
+    }
+
+    section.hero .hero-content {
+        padding-left: 20px;
+        margin-left: 10%;
+        margin: 0;
+        margin-top: 800px;
+    
+    }
+
+    section.hero .movie-list-container {
+        padding-top: 100px;
+    }
+    
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CLick Handler</title>
+</head>
+<body>
+    <h1> Kamu mau gak jadi pacar aku?</h1>
+    <h2>
+    <img src="https://cdn.discordapp.com/attachments/941611460860207144/941697006097797140/7e8a2c9b8057539309f8b019e5220510.jpg" height = "400px", width = "300px"> 
+    </h2>
+    <button onclick = "pacaran()"> Yes </button>
+    <button id="buttons" onmouseenter = "geser()"> No </button>
+    <!-- Jquery Lib -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- end Jquery -->
+    <script type="text/javascript">
+ 
+        function handler(event) {
+            $("#buttons").offset({left : event.pageX += (Math.floor(Math.random()*50) - Math.floor(Math.random()*50)), top : event.pageY += (Math.floor(Math.random()*50) - Math.random()*50)});
+        }
+        function geser() {
+            $(`#buttons`).mouseenter(handler);
+        }
+        function pacaran() {
+            alert("Kalo gitu hari ini hari pertama kita <3")
+        }
+ 
+    </script>
+</body>
+</html>

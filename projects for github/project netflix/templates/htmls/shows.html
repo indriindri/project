@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Home</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1{
+            color: red;
+            font-size: 40px;
+        }
+
+        h1:hover {
+            font-size:50px;
+            transition: all 500ms;
+            font-size-adjust: 20px;
+        }
+
+        p {
+            color: white;
+            padding-bottom: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            /* background-color: red; */
+            border-radius: 2px;
+            margin-left: 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        img {
+            width: 250px;
+            height: auto;
+            /* margin-top: 50px; */
+            /* align-items: center; */
+            /* padding-right: 20px; */
+            padding-left: 20px;
+            display: inline;
+            float: left;
+            padding-bottom: 100px;
+        }
+
+        /* .movie-list img{
+            margin-top: 50px;
+            padding-right: 50px;
+            display: flex;
+            align-items: center; 
+            display: inline;
+        } */
+
+        .movie-list-item:hover .movie-list-item-img {
+            transform: scale(1.2);
+            transition: 2s;
+        }
+
+        .movie-list-title {
+            color: white;
+            padding-top: 50px;
+            padding-left: 10px;
+        }
+
+        .btn-play {
+            background:rgba(255, 255, 255, 0.804);
+            color: black;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 5px 20px;
+            border-radius: 10px;
+            transition: 2s;
+        } 
+
+        .upcoming {
+            padding-bottom: 200px;
+        }
+
+        .trending {
+            padding-bottom: 200px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>TV Shows</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, reprehenderit iusto incidunt odio exercitationem deserunt ipsum delectus! Qui dolorum nulla, cumque nemo provident dolorem corrupti voluptatibus, nobis delectus in laborum iure eius magni ipsum commodi odio veritatis quod dolor adipisci eum eaque! Voluptatibus magnam necessitatibus ea aliquam reiciendis alias aspernatur.</p>
+
+    <a href="{{ url_for('index') }}" class="hero-content btn-play">Back Home ...</a>
+
+    <section class="hero">
+    <h2 class="movie-list-title">Top 10 TV Shows in Indonesia Today</h2>
+    <div class="movie-list-wrapper">
+        <div class="movie-list">
+            <div class="movie-list-item">
+                <img class="movie-list-item-img" src="static/img/spy.webp" alt="">
+            </div>
+            <div class="movie-list-item">
+                <img class="movie-list-item-img" src="static/img/littlewomen.jpg" alt="">
+            </div>
+            <div class="movie-list-item">
+                <img class="movie-list-item-img" src="static/img/umbrella.jpg" alt="">
+            </div>
+            <div class="movie-list-item">
+                <img class="movie-list-item-img" src="static/img/centurygirl.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="upcoming"></div>
+            <div class="movie-list-container">
+            <h2 class="movie-list-title">Coming This Week</h2>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="static/img/stranger.jpg" alt="">
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="static/img/enola2.jpg" alt="">
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="static/img/gray.jpg" alt="">
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="static/img/money.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        <div class="trending"></div>
+            <div class="movie-list-container">
+            <h2 class="movie-list-title">Trending Now</h2>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="static/img/shootingstar.webp" alt="">
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="static/img/enola2.jpg" alt="">
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="static/img/theschool.jpg" alt="">
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="static/img/money.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+    </section>
+</body>
+</html>

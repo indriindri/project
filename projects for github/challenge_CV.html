@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Flex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            float: left;
+            /* height: 50px; */
+            width: 100%;
+            background-color: #F2D7D9;
+        }
+
+        header div h1{
+            display: grid;
+            justify-content : center;
+        }
+
+        header > img, header > h1 {
+            margin-right: 10px;
+            display: inline;
+        }
+
+        header > nav {
+            background-color: #D3CEDF;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            display: grid;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            grid-template-columns: auto auto auto;
+
+        }
+
+        header nav ul li {
+            display: inline;
+
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            font-size: 30px;
+            color: black;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #9CB4CC;
+            text-align: center;
+            font-style: italic;
+        }
+
+        section.main {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 33% 67%;
+        }
+
+        /* article, aside.left, aside.right {
+            display: table-cell;
+        } */
+
+        aside.left, aside.right {
+            flex-shrink: 0;
+        }
+
+        aside.left {
+            /* order: -1;
+            width: 33%; */
+            height: 700px;
+            padding: 20px;
+            font-family: 'Poppins', sans-serif;;
+            font-weight: bold;
+            background-color: #C9BBCF;
+            font-size: 50px;
+
+        }
+
+        aside.right {
+            /* width: 66%;
+            height: 700px; */
+            background-color: #748DA6;
+            padding: 20px;
+            font-size: 14px;
+            font-family: 'Poppins', sans-serif;;
+        }
+
+        section.main aside.left img:hover {
+            transform: scale(1.2);
+            transition-duration: 5s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Indri's CV</h1>
+        </div>
+        <nav>
+            <ul class="container">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main">
+        <!-- <article>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cumque quia corrupti mollitia nostrum asperiores optio animi minus tempore! Nihil, quasi rerum beatae excepturi perspiciatis inventore necessitatibus distinctio, amet soluta sapiente aperiam iste aspernatur asperiores quisquam, velit aliquid. Qui ullam dicta repudiandae! Consectetur accusamus ducimus quia aliquam! Corporis laborum dolorem consectetur nam, cupiditate laudantium sapiente voluptates suscipit asperiores dignissimos ex neque reprehenderit dicta provident velit et consequatur dolor ipsum minima quia natus sunt! Itaque, molestias corporis! Eaque ab autem voluptatibus veniam. Maiores saepe culpa facere similique pariatur? In veniam eos odit consectetur eius, quas commodi, cupiditate nisi sint dolorum quam.
+            </p>
+        </article> -->
+        <aside class="left">
+            <img src="ignatius.png" alt="">
+            <p>
+                Name : Indri
+            </p>
+            <p>
+                Gender : Woman
+            </p>
+            <p>
+                Age : 16
+            </p>
+        </aside>
+       
+        <aside class="right">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolores, deleniti pariatur fugit nulla molestias autem eius esse corporis cumque facere quo odio recusandae labore molestiae ipsum, sit delectus. Officia, quod? Rem tempore, error eos perspiciatis maiores iusto iste quisquam, ab itaque iure repellat? Temporibus a ducimus quibusdam facere nihil nam, itaque perferendis deleniti repellat facilis sint libero voluptatem omnis alias? Corrupti vero dolore perferendis necessitatibus dolorem est officiis ex iusto voluptas, quod pariatur reiciendis aut voluptatibus quidem placeat. Quis eveniet excepturi suscipit ducimus laborum dolorem blanditiis veritatis dolorum, consequatur nam commodi praesentium sint deserunt eligendi maiores pariatur sequi. Animi, veritatis atque. Atque fugiat possimus vitae quae quibusdam optio? Nostrum quibusdam iusto laboriosam ducimus earum saepe ratione non error optio dolorum quos rerum, temporibus accusantium rem quis modi pariatur eveniet doloremque? Cumque sunt nostrum error recusandae placeat delectus beatae odio ab, pariatur accusamus culpa cum quis exercitationem nesciunt impedit molestias architecto, quaerat soluta ad iste deserunt nemo libero possimus. Accusamus aliquid amet dolorem doloribus provident! Ex tenetur adipisci reiciendis maiores maxime a dolorum aperiam, accusantium beatae aliquam repellendus! Omnis libero fuga consequatur eveniet nemo, quam error voluptatum quisquam animi. Optio illum eum necessitatibus, soluta atque modi libero, repellendus quo dolore, quisquam consequuntur praesentium officiis aliquam. Earum eveniet veritatis ea itaque reiciendis qui magni perspiciatis assumenda sequi libero sunt obcaecati dolor voluptatum dolorum adipisci tempore voluptate laudantium odit modi quae nesciunt fuga, quasi incidunt nostrum! Omnis iure molestias mollitia perspiciatis eius? Id sunt cumque sint quae libero laudantium laborum culpa soluta blanditiis quibusdam. Autem nesciunt accusamus molestiae, adipisci exercitationem numquam doloribus corporis eos quae? Dolore eaque ab hic quisquam nihil ea sed sapiente harum cupiditate quae ad nostrum, omnis vel maiores quas temporibus nesciunt vero. Quo, molestias aperiam neque placeat, quis architecto numquam fugiat debitis natus accusantium, tempora adipisci minima non?</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ea vero, facere necessitatibus nesciunt consequatur sunt ducimus aut doloribus porro quos eum itaque dolor accusantium qui optio earum aperiam sapiente! Dolore facilis quam voluptatibus, iste suscipit enim quis dolores? Magnam facilis eaque minus architecto, officiis saepe suscipit odit eos quisquam ipsam quasi cum voluptas ex inventore quo autem exercitationem ipsum. Maiores, consectetur reprehenderit? Corrupti, suscipit distinctio numquam totam a, aut et aperiam libero alias maiores itaque, quasi sapiente veritatis? Corrupti voluptatum quisquam laboriosam alias iusto obcaecati optio harum pariatur? Excepturi sint amet ut nulla possimus ea? Commodi, ex doloremque ea porro quidem, illum minus inventore doloribus quis maxime consequatur iusto. Ipsa, sunt! Voluptatem, est nulla molestiae commodi, hic provident debitis explicabo, quia praesentium veritatis nostrum atque placeat sunt. Maiores voluptas exercitationem, cum aliquid alias hic consequatur a laboriosam id in soluta minima omnis quasi repellendus qui et porro itaque officiis suscipit quis provident odio! Dolorem consequatur sint nihil excepturi quas quidem quis ab hic officiis neque molestiae, ex tempora. Suscipit totam vel assumenda in nobis unde doloribus laudantium amet impedit sunt, eos sit molestiae aut repudiandae deleniti error libero voluptate iure optio qui quo! Perferendis commodi mollitia deserunt ipsam incidunt.
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id odit debitis sunt, possimus delectus perferendis enim numquam accusantium dignissimos ab, quidem similique praesentium magnam? Esse quidem amet ratione dignissimos aut corrupti. Ullam quas soluta hic, magni atque dolorem doloribus culpa tempore. Sunt, aliquam ab! Vitae blanditiis deleniti nisi id consequatur itaque deserunt at quas iure totam ullam, dolores corporis maiores explicabo provident nemo magni assumenda exercitationem repudiandae corrupti praesentium molestias ut optio? Odit dolore quis ipsam neque modi iste voluptatibus soluta error, eius assumenda, beatae maxime! Tenetur reiciendis blanditiis amet dolorum, vel fugit? Dolor minima natus consectetur doloribus labore quas.
+            </p>
+        </aside>
+    </section>
+    <footer>
+        <p>
+            Please recruit me !!
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Portofolio Project</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script type="text/javascript" src="static/script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-item logo">
+                <h4>NETFLIX</h4>
+            </div>
+
+            <ul class="nav-item menu-nav">
+                <li><a href="{{ url_for('index', file='index.html') }}">Home</a></li>
+                <li><a href="{{ url_for( 'html_file', file='shows.html') }}">TV Shows</a></li>
+                <li><a href="{{ url_for( 'html_file', file='movies.html') }}">Movies</a></li>
+                <li><a href="{{ url_for( 'html_file', file='new.html') }}">New & Popular</a></li>
+                <li><a href="{{ url_for( 'html_file', file='list.html') }}">My List</a></li>
+                <li><a href="{{ url_for('login') }}">Sign In</a></li>
+                <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
+            </ul>
+
+
+            <div class="nav-item menu-toggle">
+                <span class="menu-toggle-item"></span>
+                <span class="menu-toggle-item"></span>
+                <span class="menu-toggle-item"></span>
+            </div> 
+        </nav>
+    </header>
+    <section class="hero">
+
+        <div class="hero-content">
+            <h1>Watch Squid Game</h1>
+            <h3>Seong Gi-hun, a divorced father and indebted gambler who lives with his elderly mother, is invited to play a series of children's games for a chance at a large cash prize. Accepting the offer, he is taken to an unknown location where he finds himself among 455 other players who are all in deep financial trouble. The players are made to wear green tracksuits and are kept under watch at all times by masked guards in pink jumpsuits, with the games overseen by the Front Man, who wears a black mask and black uniform. The players soon discover that losing a game results in their death, with each death adding ₩100 million to the potential ₩45.6 billion grand prize. Gi-hun allies with other players, including his childhood friend Cho Sang-woo and North Korean defector Kang Sae-byeok, to try to survive the physical and psychological twists of the games.</h3>
+            <a href="https://www.netflix.com/" class="hero-content btn-play" target="_blank">Play</a>
+            <a href="https://www.netflix.com/search?q=squid&jbv=81040344" class="hero-content btn-watch" target="_blank">Watch Credits</a>
+
+        </div>
+
+        <div class="now-trending"></div>
+            <div class="movie-list-container">
+                <h2 class="movie-list-title">Now Trending</h2>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="static/img/manifest.jpg" alt="">
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="static/img/enola2.jpg" alt="">
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="static/img/centurygirl.jpg" alt="">
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="static/img/theschool.jpg" alt="">
+                        </div>
+                    </div>
+
+        <div class="upcoming"></div>
+            <div class="movie-list-container">
+                <h2 class="movie-list-title">Upcoming</h2>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="static/img/stranger.jpg" alt="">
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="static/img/enola.jpg" alt="">
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="static/img/gray.jpg" alt="">
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="static/img/money.jpg" alt="">
+                        </div>
+                    </div>
+
+        
+                
+            </div>
+        </div>
+    </section>
+    <section class="about"></section>
+</body>
+</html>

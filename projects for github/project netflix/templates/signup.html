@@ -1,0 +1,111 @@
+{% extends "layout.html" %} 
+
+{% block title %}Form Login!{% endblock title%}
+
+{% block main %} 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Poppins', sans-serif;
+            height: 100vh;
+            background: gray url('../static/img/netflixbg.jpg') center / cover no-repeat;
+        }
+
+        td {
+            color: red;
+            font-size: 30px;
+            font-weight: bold;
+            justify-content: center;
+            display: center;
+            /* text-align: center; */
+        }
+
+
+        header {
+            color: red;
+            font-size: 50px;
+            font-weight: bold;
+            text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+        }
+
+        header:hover {
+            font-size: 60px;
+            transition: all 500ms;
+            font-size-adjust: 20px;
+        }
+
+        p {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p:hover {
+            text-decoration: underline;
+            color: red;
+        }
+
+        a {
+            color: white;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: red;
+
+        }
+
+        .td .submit {
+            border-radius: 3px;
+        }
+
+        .btn-play {
+            background:rgba(255, 255, 255, 0.804);
+            color: black;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 5px 20px;
+            border-radius: 10px;
+            transition: 2s;
+        }
+        
+    </style>
+
+    <header>Watch 100+ Movies Only on Netflix, Join Us Now!</header>
+
+    <div class="signup">
+        <form>
+            <table>
+                <tr>
+                    <td>Username : </td>
+                    <td><input type="text" name="username" placeholder="Username" autocomplete="off" required autofocus></td>
+                </tr>
+                <tr>
+                    <td>Password :</td>
+                    <td><input type="password" name="password" placeholder="Password" autocomplete="off" required></td>
+                </tr>
+                <tr>
+                    <td>Gender : </td>
+                    <td><input type="radio" name="Gender">Male 
+                        <input type="radio" name="Gender">Female  
+                        <input type="radio" name="Gender">Other 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email : </td>
+                    <td><input type="text" placeholder="Enter your email here" name="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div class="signin">
+        <p>Already have an account? <a href="{{ url_for('login') }}"> Sign In</a></p>
+    </div>
+
+{% endblock main %}

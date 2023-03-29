@@ -1,0 +1,38 @@
+{% extends "layout.html" %} 
+
+{% block title %}Login Failed!{% endblock title %}
+
+{% block main %}
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+
+        .btn-play {
+            background:rgba(255, 255, 255, 0.804);
+            color: black;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 5px 20px;
+            border-radius: 10px;
+            transition: 2s;
+        }
+    </style>
+
+    <h1>Sorry, login failed... Please enter a correct username and password!</h1>
+    <a href="{{ url_for('login') }}" class="hero-content btn-play">Try again ...</a>
+
+{% endblock main %}
